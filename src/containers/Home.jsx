@@ -65,7 +65,7 @@ function ProfilePicture() {
           <div className="separator"></div>
           <div className="Links">
           <ul className="links-list">
-            <li><a href="https://www.linkedin.com/in/yotham-sage-2854091b3/" target="_blank" rel="noreferrer noopener" className={isContactClicked ? 'highlight' : ''}>Linkedin</a></li>
+            <li><a href="https://www.linkedin.com/in/yothamsage/" target="_blank" rel="noreferrer noopener" className={isContactClicked ? 'highlight' : ''}>Linkedin</a></li>
             <li><a href="https://www.github.com/yotham" target="_blank" rel="noreferrer noopener" className={isContactClicked ? 'highlight' : ''}>Github</a></li>
             <li><a onClick={openModal} className={isContactClicked ? 'highlight' : ''}>Email</a></li>
             <Modal
