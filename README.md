@@ -1,2 +1,2 @@
 # Personal Website
-https://yotham.netlify.app/
+https://www.yotham.net
