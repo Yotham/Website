@@ -1,0 +1,6 @@
+body {
+    user-select: none;
+  }
+input {
+  user-select: auto;
+}
