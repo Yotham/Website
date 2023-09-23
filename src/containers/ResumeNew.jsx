@@ -5,7 +5,6 @@ import myImage from "../assets/Resume.jpg";
 import { AiOutlineDownload } from "react-icons/ai";
 import pdf from "../assets/Resume.pdf";
 import './ResumeNew.css';
-
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
@@ -14,11 +13,11 @@ function ResumeNew() {
   }, []);
 
   return (
-    <div>
+    <div className = "main">
       <Container fluid className="resume-section">
 
         <Row className="resume" style={{ justifyContent: "center" }}>
-          <img className = "resumePic" src={myImage} alt="Description of Image"></img>
+          <img className = "resumePic" src={myImage} alt="Resume"></img>
         </Row>
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <center><Button 

@@ -1,16 +1,18 @@
+
 .resumePic {
+    flex-grow: 1;
     height: 800px;
     border-radius: 10px;
     border: 2px solid #cbd5e0;
+    background-color: white;
     margin-bottom:15px;
+
 }
 
 .ResumeDownload {
     font-weight: bold;
     align-items: center;
     margin-top: 10px;
-    
-    /* Styling based on .Links a */
     background-color: #4a5568;
     color: #fff;
     text-align: center;

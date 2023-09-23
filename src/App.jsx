@@ -1,22 +1,24 @@
-//import { useState } from 'react'
-import Home from './containers/Home'
-import Sidebar from './containers/sideBar'
-//import Navbar from './containers/navBar'
+import React, { useState } from 'react';
+import Home from './containers/Home';
+import Navbar from './containers/navBar';
+import Footer from './containers/Footer';
+import About from './containers/About'; // Update the path to where your About component is located
 import { HighlightProvider } from './containers/highlightContext';
-import Resume from "./containers/ResumeNew";
-
-import './App.css'
+import './App.css';
 
 function App() {
-  //const [count, setCount] = useState(0)
+  const [currentView, setCurrentView] = useState('home');
 
   return (
     <div>
+      <Navbar onChangeView={setCurrentView} />
       <HighlightProvider>
-        <Home />
+        {currentView === 'home' && <Home />}
+        {currentView === 'about' && <About />}
       </HighlightProvider>
+      <Footer/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

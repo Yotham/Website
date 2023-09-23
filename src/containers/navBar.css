@@ -1,47 +1,40 @@
-/* Navbar.css */
+/* navBar.css */
+
+.nav-btn {
+  padding: 10px 10px ;
+  border: 2px solid #cbd5e0;  /* Match with the homepage border */
+  background-color: #edf2f7;  /* Use homepage's background color */
+  color: #4a5568;  /* Match text color with links color of homepage */
+  border-radius: 10px; /* Match with homepage's border-radius */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.nav2{
+  margin-right:10px;
+}
+
+.nav-btn:hover {
+  background-color: #cbd5e0;  /* On hover, change to a different shade */
+  color: #2d3748;  /* Darken text color on hover */
+}
 
 .navbar {
-  position: fixed;
-  top: 0;
-  background-color: #edf2f7;
-  border: 3px solid #cbd5e0;
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  padding: .7rem;
+  border-radius:10px;
+  border: 2px solid #cbd5e0;  /* Match with the homepage border */
   display: flex;
-  justify-content: space-around;
-  font-family: Helvetica;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%; /* Or your desired width */
-  max-width: 1155px; /* Same as your main content's max-width */
-}
-
-.navbar a {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  background-color: #4a5568;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.navbar a:hover {
-  background-color: #2d3748;
-}
-
-.navbar a.active {
-  color: #edf2f7;
-  background-color: #2d3748;
-}
-
-/* If you want to wrap navbar and main in a container */
-.container {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 800px;
-  margin: auto;
+  background-color: #f7f7f7; /* Maintain the light gray background */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;  
+  padding:.5rem;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-title {
+  flex-grow: 5;
 }
