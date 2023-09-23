@@ -13,7 +13,7 @@ function ResumeNew() {
   }, []);
 
   return (
-    <div className = "main">
+    <div className = "rMain">
       <Container fluid className="resume-section">
 
         <Row className="resume" style={{ justifyContent: "center" }}>
