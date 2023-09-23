@@ -6,6 +6,8 @@ import { HighlightContext } from './highlightContext';
 import Resume from "./ResumeNew";
 import "./About.css"
 import Techstack from "./Techstack"
+import {CgArrowRight} from "react-icons/cg";
+
 function About() {
 
   return (
@@ -23,13 +25,13 @@ function About() {
           <p>Besides coding other activities that I love to do are!
             <ul className = "ULa">
               <li>
-                Weightlifting
+                <CgArrowRight/>Weightlifting
               </li>
               <li>
-                Traveling
+                <CgArrowRight/>Traveling
               </li>
               <li>
-                Audiobooks
+                <CgArrowRight/>Audiobooks
               </li>
             </ul>
           </p>

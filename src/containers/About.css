@@ -53,13 +53,22 @@ p{
     font-weight: bold;
 }
 .ULa {
-    list-style-type: none;
+    list-style-type: none; /* Remove default list style */
+    padding-left: 0;       /* Remove default padding */
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.ULa ul li::before {
-    content: "-";
-    margin-right: 8px;
+.ULa li {
+    padding-left: 1.2em;   /* Provide space for the dash */
+    display: flex;         /* Make the li a flex container */
+    align-items: center;   /* Center items vertically */
+    margin-top:.5rem;
 }
+
+
+
 
 .Languages{
     margin-top:1.5rem;
