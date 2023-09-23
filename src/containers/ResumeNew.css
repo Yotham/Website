@@ -8,6 +8,9 @@
     margin-bottom:15px;
 
 }
+.rMain{
+    margin-bottom:5px;
+}
 
 .ResumeDownload {
     font-weight: bold;
@@ -21,6 +24,7 @@
     border: 3px solid #cbd5e0;
     transition: background-color 0.3s ease;
     padding: 0.5rem 1rem; /* Assuming this padding works for your design */
+    margin-bottom:25px;
 }
 
 .ResumeDownload:hover {
