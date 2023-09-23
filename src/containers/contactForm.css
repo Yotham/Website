@@ -1,62 +1,70 @@
 /* ContactForm.css */
 .contactContainer{
-    height:10px;
-    
+  height:0.625rem;
+  
 }
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    max-width: 800px;    /* Set to match your main content's max-width */
-    margin: auto;        /* This will center the form */
-    border: 3px solid #cbd5e0;
-    padding: 1rem;
-    background-color: #edf2f7;
-    border-radius: 10px;
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-    font-family: Helvetica;
-  }
-  
-  .form-group {
-    margin-bottom: 1em;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 0.5em;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    padding: 0.5em;
-    border: 1px solid #cbd5e0;
-    border-radius: 5px;
-    font-family: Helvetica;
-  }
-  
-  .form-group textarea {
-    resize: vertical;
-    min-height: 3px;
-  }
-  
-  .form-buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .contact-form-button {
-    background-color: #4a5568;
-    color: #fff;
-    padding: 0.5em 1em;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-family: Helvetica;
-  }
-  
-  .contact-form-button:hover {
-    background-color: #2d3748;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 50.000rem;    /* Set to match your main content's max-width */
+  margin: auto;        /* This will center the form */
+  border: 0.188rem solid #cbd5e0;
+  padding: 1rem;
+  background-color: #edf2f7;
+  border-radius: 0.625rem;
+  box-shadow: 0.000rem 0.625rem 0.938rem rgba(0, 0, 0, 0.1);
+  font-family: Helvetica;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 0.062rem solid #cbd5e0;
+  border-radius: 0.312rem;
+  font-family: Helvetica;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 0.188rem;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-form-button {
+  background-color: #4a5568;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 0.312rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: Helvetica;
+}
+
+.contact-form-button:hover {
+  background-color: #2d3748;
+}
+
+  @media (max-width: 50rem) {
+      /* Adjustments for smaller screens can be added here */
+      .contact-form {
+          max-width: 90%; /* Set to a relative width to scale better */
+          margin: 0.5rem auto; /* Adjusting margin for smaller screens */
+      }
   }
   

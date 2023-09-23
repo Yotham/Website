@@ -1,16 +1,16 @@
 /* navBar.css */
 
 .nav-btn {
-  padding: 10px 10px ;
-  border: 2px solid #cbd5e0;  /* Match with the homepage border */
+  padding: 0.625rem 0.625rem ;
+  border: 0.125rem solid #cbd5e0;  /* Match with the homepage border */
   background-color: #edf2f7;  /* Use homepage's background color */
   color: #4a5568;  /* Match text color with links color of homepage */
-  border-radius: 10px; /* Match with homepage's border-radius */
+  border-radius: 0.625rem; /* Match with homepage's border-radius */
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 .nav2{
-  margin-right:10px;
+  margin-right:0.625rem;
 }
 
 .nav-btn:hover {
@@ -19,22 +19,63 @@
 }
 
 .navbar {
-  border-radius:10px;
-  border: 2px solid #cbd5e0;  /* Match with the homepage border */
+  border-radius:0.625rem;
+  border: 0.125rem solid #cbd5e0;  /* Match with the homepage border */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f7f7f7; /* Maintain the light gray background */
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;  
+  box-shadow: 0.000rem 0.125rem 0.250rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.250rem;  
   padding:.5rem;
 }
 
 .auth-buttons {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 .navbar-title {
   flex-grow: 5;
+}
+
+@media (max-width: 50rem) {
+  .nav-btn {
+    padding: 0.625rem 0.625rem ;
+    border: 0.125rem solid #cbd5e0;  /* Match with the homepage border */
+    background-color: #edf2f7;  /* Use homepage's background color */
+    color: #4a5568;  /* Match text color with links color of homepage */
+    border-radius: 0.625rem; /* Match with homepage's border-radius */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .nav2{
+    margin-right:0rem;
+  }
+  
+  .nav-btn:hover {
+    background-color: #cbd5e0;  /* On hover, change to a different shade */
+    color: #2d3748;  /* Darken text color on hover */
+  }
+  
+  .navbar {
+    border-radius:0.625rem;
+    border: 0.125rem solid #cbd5e0;  /* Match with the homepage border */
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    background-color: #f7f7f7; /* Maintain the light gray background */
+    box-shadow: 0.000rem 0.125rem 0.250rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.250rem;  
+    padding:.5rem;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 0.625rem;
+  }
+  
+  .navbar-title {
+    flex-grow: 5;
+  }
 }

@@ -10,7 +10,7 @@ function Footer() {
   return (
     <Container fluid className="footer">
       <Row className="footer-row">
-        <Col className="footer-copywright">
+        <Col className="footer-copywright f1">
           <h3>Developed by Yotham Sage</h3>
         </Col>
         <Col className="footer-copywright">

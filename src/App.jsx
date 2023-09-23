@@ -10,14 +10,16 @@ function App() {
   const [currentView, setCurrentView] = useState('home');
 
   return (
-    <div>
-      <Navbar onChangeView={setCurrentView} />
-      <HighlightProvider>
-        {currentView === 'home' && <Home />}
-        {currentView === 'about' && <About />}
-      </HighlightProvider>
-      <Footer/>
-    </div>
+    <body>
+      <div>
+        <Navbar onChangeView={setCurrentView} />
+        <HighlightProvider>
+          {currentView === 'home' && <Home />}
+          {currentView === 'about' && <About />}
+        </HighlightProvider>
+        <Footer/>
+      </div>
+    </body>
   );
 }
 

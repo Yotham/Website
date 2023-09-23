@@ -1,30 +1,30 @@
 
 .resumePic {
     flex-grow: 1;
-    height: 800px;
-    border-radius: 10px;
-    border: 2px solid #cbd5e0;
+    height: 50.000rem;
+    border-radius: 0.625rem;
+    border: 0.125rem solid #cbd5e0;
     background-color: white;
-    margin-bottom:15px;
+    margin-bottom:0.938rem;
 
 }
 .rMain{
-    margin-bottom:5px;
+    margin-bottom:0.312rem;
 }
 
 .ResumeDownload {
     font-weight: bold;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     background-color: #4a5568;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
-    border: 3px solid #cbd5e0;
+    border-radius: 0.312rem;
+    border: 0.188rem solid #cbd5e0;
     transition: background-color 0.3s ease;
     padding: 0.5rem 1rem; /* Assuming this padding works for your design */
-    margin-bottom:25px;
+    margin-bottom:1.562rem;
 }
 
 .ResumeDownload:hover {
@@ -40,3 +40,18 @@
     background-color: #6495ED;
     color: #000;
 }
+
+    @media (max-width: 50rem) {
+        /* Adjustments for smaller screens can be added here */
+        
+        .resumePic {
+            flex-grow: 1;
+            height: 20rem;
+            border-radius: 0.625rem;
+            border: 0.125rem solid #cbd5e0;
+            background-color: white;
+            margin-bottom:0.938rem;
+
+        }
+    }
+    
