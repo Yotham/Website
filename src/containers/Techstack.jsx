@@ -13,17 +13,16 @@ import {
   DiReact
   
 } from "react-icons/di";
-import {
-  SiCsharp,
-  SiTypescript
-} from "react-icons/si";
+import{
+    PiFileSqlThin
+}from "react-icons/pi";
 
 function Techstack() {
   return (
     <div style={gridContainerStyle}>
     <div className = "tech-icons" style={iconStyle}><DiPython /></div>
     <div className = "tech-icons" style={iconStyle}><DiJavascript1 /></div>
-    <div className = "tech-icons" style={iconStyle}><DiPostgresql /></div>
+    <div className = "tech-icons" style={iconStyle}><PiFileSqlThin /></div>
     <div className=  "tech-icons" style={iconStyle}><CIcon/></div>
     <div className = "tech-icons" style={iconStyle}><CgCPlusPlus /></div>
     <div className = "tech-icons" style={iconStyle}><DiJava /></div>

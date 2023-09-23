@@ -6,6 +6,8 @@ import { HighlightContext } from './highlightContext';
 import Resume from "./ResumeNew";
 import "./About.css"
 import Techstack from "./Techstack"
+import Frame from "./Frameworks"
+import Tools from "./tools"
 import {CgArrowRight} from "react-icons/cg";
 
 function About() {
@@ -44,6 +46,18 @@ function About() {
         </div>
         <div className = "stackIcons">
           <Techstack />
+        </div>
+        <div className = "Languages">
+            <h1 className = "Title">Frameworks</h1>
+        </div>
+        <div className = "frameIcons">
+          <Frame />
+        </div>
+        <div className = "Languages">
+            <h1 className = "Title">Tools</h1>
+        </div>
+        <div className = "stackIcons">
+          <Tools />
         </div>
     </div>
   );
