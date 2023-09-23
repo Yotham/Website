@@ -9,6 +9,7 @@ import Techstack from "./Techstack"
 import Frame from "./Frameworks"
 import Tools from "./tools"
 import {CgArrowRight} from "react-icons/cg";
+import fam from "../assets/fam.jpg"
 
 function About() {
 
@@ -38,7 +39,7 @@ function About() {
             </ul>
           </p>
           </div>
-          <img className = "Img" src ="https://cc-prod.scene7.com/is/image/CCProdAuthor/What-is-Stock-Photography_P1_mobile?$pjpeg$&jpegSize=200&wid=720" ></img>
+          <img className = "Img" src ={fam} ></img>
         </div>
         </div>
         <div className = "Languages">
