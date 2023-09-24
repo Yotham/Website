@@ -6,6 +6,7 @@ import About from './containers/About'; // Update the path to where your About c
 import { HighlightProvider } from './containers/highlightContext';
 import './App.css';
 import './containers/Footer.css';
+import Projects from './containers/projects'; 
 
 function App() {
   const [currentView, setCurrentView] = useState('home');
@@ -17,6 +18,7 @@ function App() {
         <HighlightProvider>
           {currentView === 'home' && <Home />}
           {currentView === 'about' && <About />}
+          {currentView === 'projects' && <Projects/>}
         </HighlightProvider>
         <Footer/>
       </div>

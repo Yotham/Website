@@ -1,0 +1,64 @@
+
+.test {
+    font-size: 1.5rem !important;
+    margin: 15px !important;
+    padding: 10px !important;
+    opacity: 0.93 !important;
+    border: 0.188rem solid #cbd5e0 !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    flex-direction: row;
+    
+    box-shadow: .5px 1px 2px 1px rgba(89, 4, 168, 0.137) !important;
+    overflow: hidden !important;
+    transition: all 0.1s ease 0s !important;
+    font-size: 1.2em; /* Adjust based on your needs */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+  }
+  .test:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    border: 0.188rem  solid #a2aab3 !important;
+  }
+  .test-images {
+    padding: 20px !important;
+    line-height: 1.6 !important;
+  }
+  /* Modal Styles */
+.modal-content {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #edf2f7;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: .5px 1px 2px 1px rgba(89, 4, 168, 0.137);
+    margin: auto;
+    font-size:16px;
+}
+
+.modal-header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.modal-description {
+    margin-bottom: 20px;
+}
+
+.modal-close {
+    background-color: #4a5568;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-close:hover {
+    background-color: #2d3748;
+}
