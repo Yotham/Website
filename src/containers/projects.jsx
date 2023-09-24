@@ -45,11 +45,11 @@ function Projects() {
             onRequestClose={closeModal}
             contentLabel="Project Description"
             className="modal-content"
-            style={customModalStyles}  // <-- Add this line
+            style={customModalStyles} 
+            shouldCloseOnOverlayClick={true}
         >
             <h2 className="modal-header">{selectedProject}</h2>
             <p className="modal-description">{projects.find(p => p.name === selectedProject)?.description}</p>
-            <button onClick={closeModal}>Close</button>
         </Modal>
       </div>
     </div>
@@ -71,9 +71,15 @@ const gridContainerStyle = {
   };
   const customModalStyles = {
     overlay: {
-        backgroundColor: 'transparent', 
-        top:'25%',
-        bottom:'50%'
+        backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        top: '0',
+        left: '0',
+        right: '0',
+        bottom: '0',
+        display: 'flex',              // Using flexbox to help with positioning
+        flexDirection: 'column',      // Stack children vertically
+        justifyContent: 'flex-start', // Start children at the top
+        alignItems: 'center'          // Center children horizontally
     },
     content: {
       top: 'none',
@@ -82,6 +88,8 @@ const gridContainerStyle = {
       bottom: 'none',
       maxWidth: '500px',
       margin: 'auto',
+      overflow: 'auto',
+      WebkitOverflowScrolling: 'touch'
     }
   };
   
