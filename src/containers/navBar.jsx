@@ -8,7 +8,7 @@ function Navbar({ onChangeView }) {
             <div className="auth-buttons">
                 <button className="nav-btn" onClick={() => onChangeView('home')}>Home</button>
                 <button className="nav-btn" onClick={() => onChangeView('about')}>About</button>
-                <button className="nav-btn nav2" onClick={() => onChangeView('projects')}>Projects</button>
+                {/*<button className="nav-btn nav2" onClick={() => onChangeView('projects')}>Projects</button>*/}
             </div>
         </div>
     );
