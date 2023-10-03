@@ -49,13 +49,7 @@ function About() {
           <Techstack />
         </div>
         <div className = "Languages">
-            <h1 className = "Title">Frameworks</h1>
-        </div>
-        <div className = "frameIcons">
-          <Frame />
-        </div>
-        <div className = "Languages">
-            <h1 className = "Title">Tools</h1>
+            <h1 className = "Title">Technologies</h1>
         </div>
         <div className = "stackIcons">
           <Tools />

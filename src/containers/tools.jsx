@@ -2,8 +2,10 @@ import React from "react";
 import SapIcon from "./sap";
 
 import {
+    DiReact,
     DiMongodb,
-    DiPostgresql
+    DiPostgresql,
+    DiLinux
   } from "react-icons/di";
 import {
     SiKubernetes,
@@ -14,11 +16,11 @@ import {
 function Tools() {
   return (
     <div style={gridContainerStyle}>
-    <div className = "tech-icons" style={iconStyle}><DiPostgresql/></div>
     <div className = "tech-icons" style={iconStyle}><SapIcon/></div>
+    <div className = "tech-icons" style={iconStyle}><DiReact/></div>
+    <div className = "tech-icons" style={iconStyle}><DiPostgresql/></div>
     <div className = "tech-icons" style={iconStyle}><DiMongodb/></div>
-    <div className = "tech-icons" style={iconStyle}><SiKubernetes/></div>
-    <div className = "tech-icons" style={iconStyle}><SiMicrosoftoffice/></div>
+    <div className = "tech-icons" style={iconStyle}><DiLinux/></div>
     </div>
   );
 }
