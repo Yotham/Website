@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SapIcon from "./sap";
+
 
 import {
     DiReact,
@@ -12,8 +13,33 @@ import {
     SiMicrosoftoffice
   } from "react-icons/si";
 
+  
 
 function Tools() {
+  
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  const gridContainerStyle = {
+    display: 'grid',
+    gridTemplateColumns: isMobile ? 'repeat(1, 1fr)' : 'repeat(5, 1fr)',
+    gap: '16px',
+    justifyContent: 'center',
+    paddingBottom: '50px',
+  };
+  
+  const iconStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+  };
   return (
     <div style={gridContainerStyle}>
     <div className = "tech-icons" style={iconStyle}><SapIcon/></div>
@@ -23,20 +49,8 @@ function Tools() {
     <div className = "tech-icons" style={iconStyle}><DiLinux/></div>
     </div>
   );
+  
 }
 
-const gridContainerStyle = {
-  display: 'grid',
-  gridTemplateColumns: 'repeat(5, 1fr)',  // 4 items per row
-  gap: '16px',  // Adjust as needed
-  justifyContent: 'center',
-  paddingBottom: '50px',
-};
-
-const iconStyle = {
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-};
 
 export default Tools;

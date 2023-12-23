@@ -107,25 +107,31 @@ p{
   @media screen and (max-width: 600px) {
     .Amain {
         max-width: 100%;
-        padding: 1rem;
     }
     .content, .stackIcons {
         flex-direction: column;
         align-items: center;
     }
     h1, .Title, p {
-        font-size: smaller;
+        font-size: 15px;
+    }
+    .pMain{
+        padding:2rem;
+    }
+    .pSub{
+        padding:2rem;
     }
     .Img {
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
     }
-    .Amain, .content, .stackIcons {
+    .Amain, .content{
         margin: 0;
         padding: 0;
     }
-    .tech-icons {
-        font-size: 3em; /* adjust as needed */
+    .stackIcons {
+        margin: 0;
+        padding: 0;
     }
                     
 }

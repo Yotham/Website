@@ -25,7 +25,7 @@ function About() {
           <p className = "pMain" >My name is <p className = "pBold">Yotham Sage</p>.
           I am completing my senior year at Rennselear Polytechnic Institute, where I am studying <p className = "pBold">Computer Science</p>.
           I recently completed an internship at <p className = "pBold">GE Vernova</p> as a Digital Technology Intern, where I worked on a team developing project solutions and automating tasks.</p>
-          <p>Besides coding other activities that I love to do are!
+          <p className = "pSub">Besides coding other activities that I love to do are!
             <ul className = "ULa">
               <li>
                 <CgArrowRight/>Weightlifting
