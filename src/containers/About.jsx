@@ -14,6 +14,7 @@ import fam from "../assets/fam.jpg"
 function About() {
 
   return (
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div className="Amain">
       <div className = "styleMain">
         <div className="Description">
@@ -55,6 +56,7 @@ function About() {
           <Tools />
         </div>
     </div>
+    </meta>
   );
 }
 

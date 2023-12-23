@@ -104,4 +104,29 @@ p{
     display:grid;
   }
 
+  @media screen and (max-width: 600px) {
+    .Amain {
+        max-width: 100%;
+        padding: 1rem;
+    }
+    .content, .stackIcons {
+        flex-direction: column;
+        align-items: center;
+    }
+    h1, .Title, p {
+        font-size: smaller;
+    }
+    .Img {
+        max-width: 100%;
+        height: auto;
+    }
+    .Amain, .content, .stackIcons {
+        margin: 0;
+        padding: 0;
+    }
+    .tech-icons {
+        font-size: 3em; /* adjust as needed */
+    }
+                    
+}
 
